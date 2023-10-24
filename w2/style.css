@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&family=Noto+Sans+JP:wght@100&display=swap');
+
+  body {
+    background: linear-gradient(45deg, #6b6b6b, #ececec); 
+    border: 10 px #000000;
+    min-height:100%;
+    margin:0px;
+    min-height: 100vh;;
+
+
+  }
+
+#nav {
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    border-top:4px solid #00000094;
+    border-bottom: 4px solid #00000094;
+    color: #000000;
+
+
+  }
+
+  #bio-link, #education-link, #hobbies-link{
+    padding: 10px;
+    display:inline-block;
+    color: #666666;
+}
+
+  #header {
+    color: #685e5e;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+.p1-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+#main{
+    border-top: 10 px #000000;
+    border-bottom: #000000;
+    border: #000000;
+    border-bottom: 4px solid #00000094;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #ffffff18;
+    border: 1px;
+    border-radius: 5px;
+    display: inline-block;
+    color:rgb(194, 245, 194);
+
+}
+
+a:hover {
+    background-color:rgb(151, 142, 142);
+    color:rgb(22, 95, 22);
+  }
+
+.title{
+    font-family: 'IBM Plex Mono', monospace;
+    color:rgb(22, 95, 22)
+    
+}
+
+.hide {
+    display: none;}

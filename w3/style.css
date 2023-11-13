@@ -5,11 +5,7 @@ html body{
     border:0px solid black;
 
 }
-body{
-    min-height:100%;
-    background-color:#eee;
-    margin:0px;
-}
+
 main{
     border-color: red;
     border-width: 5px;
@@ -18,7 +14,7 @@ main{
     display: grid;
     align-content: space-around;
     grid-template-columns: auto auto auto;
-    grid-template-areas: "header header header header"
+    gritemplate-areas: "hed-ader header header header"
                         "nav nav nav nav"
                         "s1 s1 s1 s2"
                         "footer footer footer footer";

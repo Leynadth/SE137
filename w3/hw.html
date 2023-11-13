@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="author" content="Leynadth Sosa Ortiz" >
+    <meta name="description" content="W2 Bio Page Assignment" >
+
+    <title>W2 | Assignment</title>
+    <link rel="stylesheet" href="hw.css">
+
+</head>
+<body>
+    <div id="header">
+        <h1>Leynadth Sosa Ortiz</h1>
+    </div><!--#header-->
+
+    <div id="nav">
+       
+        <a id="bio-link" href="#">Bio </a>
+        <a id="education-link"href="#">Educaiton </a>
+        <a id="hobbies-link" href="#">Hobbies </a>
+    </div><!--#nav-->
+
+    <div id="main">
+        <div id="Bio" >
+            <h2 class="title">My Bio</h2>
+            <p id="p1" class="p1-text">I was originally born in Puerto Rico and moved to Rhode Island at the age of two. In my free
+                time i usually watch movies, play video games, and spend time with family and friends. Im 
+                a calm and nonchalant person i can get along with anyone. Im currenlty enrolled at NEIT for
+                Software Engineering.
+            </p>
+            <p id="p2" class="p1-text">Outside of my academic pursuits and leisure activities, I also have a 
+                deep-seated passion for travel and exploration. I believe that experiencing different cultures
+                 and landscapes enriches the mind and soul. Over the years, I've had the opportunity to visit 
+                 various countries, each trip leaving me with unforgettable memories and a broader perspective 
+                 on the world. Whether it's wandering through ancient ruins in Europe, hiking in the lush 
+                 rainforests of Central America, or simply savoring exotic cuisines in Asia, I relish the 
+                 adventure that comes with discovering new places. Traveling not only satisfies my wanderlust 
+                 but also reminds me of the beauty and diversity that exists in our global community, which 
+                 continues to inspire and shape my outlook on life.
+                </p>
+        </div><!--#bio-->
+
+
+        <div id="ed" class="hide">
+            <h2 class="title">Schooling</h2>
+            <ul>
+                <li>Anthony Carnival Elementary</li>
+                <li>Hugh B Bain Middle School</li>
+                <li><a href="https://www.providenceschools.org/classical" target="_blank">Classical HighSchool</a></li>
+            </ul>
+        </div><!--ed-->
+
+
+        <div id="hobbies" class="hide">
+            <h2 class="title">Hobbies</h2>
+            <ol>
+                <li>Video Games</li>
+                <li>Movies</li>
+                <li>Cars</li>
+            </ol>
+            <img src="images/mc.png" alt="Minecaft game">
+        </div><!--#hobbies-->
+
+    </div><!--#main-->
+
+    <div id="footer">
+        <p>©2023 Leynadth Sosa Ortiz | W2 Assignment</p>
+    </div><!--#footer-->
+
+    <script>
+       
+        var a = Array.from(document.querySelectorAll(`a:not([target="_blank"])`));
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, hide)
+        }
+       
+        function hide(e)
+        {
+            e.preventDefault();
+
+            var div = document.querySelectorAll(`#main div`)
+           
+            for(let i=0; i<div.length; i++)
+            {
+                div[i].classList.add(`hide`);
+            }
+           
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+   </script>
+
+</body>
+</html>

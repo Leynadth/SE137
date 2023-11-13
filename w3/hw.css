@@ -1,41 +1,103 @@
 @charset "UTF-8";
-*{border:1px solid black;}
-html body{
-    height:100vh;
-    border:0px solid black;
 
-}
+
 body{
     min-height:100%;
-    background-color:#cccccc;
+    background-color:#000000;
     margin:0px;
+    border:10px solid black;
+    box-sizing: border-box;
+    min-height:100%; 
+    position: relative;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'Bio Bio Bio'
+    'hobbies kanye ed'
+    'footer footer footer';
+
+}  
+
+
+#main{
+    margin-left: 10px;
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'nav nav nav'
+    'Bio Bio Bio'
+    'hobbies kanye ed'
+    'footer footer footer';
+    grid-gap:10px;
+}
+
+#header{
+    background-color: black;
+    color: white;
+    grid-area: header;
+    text-align: center;
+    
     
 }
 
 #nav{
-    border-color: rgb(#6D6D6D);
-    border-width: 5px;
-    box-sizing: border-box;
-    display: grid;
-    align-content: space-around;
-    grid-template-columns:auto auto auto;
-    background-color:rgb(151, 142, 142);
-    width: 1920px;
-height: 71px;
-flex-shrink: 0;
+    background-color: grey;
+    text-align: center;
+    grid-area: nav;
+    color: red;
+    padding:5px;
+}
+
+#link{
+font-size: 36px;
+margin-right: 60px;
+color: red;
+}
+
+#Bio{
+    background-color: rgb(255, 255, 255);
+    grid-area: Bio;
 
 }
 
-a:hover {
-    background-color:rgb(151, 142, 142);
-    color:rgb(255, 0, 0);}
 
-#Bio{border-color: rgb(#6D6D6D);
-    border-width: 5px;
-    box-sizing: border-box;
-    display: grid;
-    align-content: space-around;
-    grid-template-columns:title p1 p2;
-    background-color:rgb(0, 0, 0);
-    color:white
+.title{
+    background-color: grey;
+    color:red;
+
+    padding-top: 6px;
+    padding-bottom: 8px;
+
+
+}
+
+#kanye{
+    height: 628px;
+    grid-area: kanye;
+    background-repeat: no-repeat;
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbSeyEy-G7rLrWzTtn-NYLudq50ozGKqF9ghAQZwWLgxxs1RBU);
+}
+
+#ed{
+    background-color: rgb(255, 255, 255);
+    grid-area: ed;
+
+}
+
+#hobbies{
+    background-color: rgb(255, 255, 255);
+    grid-area: hobbies;
+    float: right;
+}
+
+
+#footer{
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+    margin-top: 10px;
+    text-align: center;
+    color:white;
+
+
 }

@@ -14,7 +14,7 @@ main{
     display: grid;
     align-content: space-around;
     grid-template-columns: auto auto auto;
-    gritemplate-areas: "hed-ader header header header"
+    grid-template-areas: "hed-ader header header header"
                         "nav nav nav nav"
                         "s1 s1 s1 s2"
                         "footer footer footer footer";

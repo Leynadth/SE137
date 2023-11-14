@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
-
-body{
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Jacques+Francois&family=Jura&display=swap');body{
     min-height:100%;
     background-color:#000000;
     margin:0px;
@@ -37,37 +35,43 @@ body{
     color: white;
     grid-area: header;
     text-align: center;
-    
+    font-family: 'Jura', sans-serif;
     
 }
 
 #nav{
-    background-color: grey;
+    background-color:  #6D6D6D;
     text-align: center;
     grid-area: nav;
     color: red;
     padding:5px;
+    font-family: 'Jacques Francois', serif;
+
 }
 
 #link{
 font-size: 36px;
 margin-right: 60px;
 color: red;
+text-decoration: none;
 }
 
 #Bio{
     background-color: rgb(255, 255, 255);
     grid-area: Bio;
+    font-family: 'Inter', sans-serif;
+
 
 }
 
 
 .title{
-    background-color: grey;
+    background-color: #6D6D6D;
     color:red;
-
+    font-family: 'Jacques Francois', serif;
     padding-top: 6px;
     padding-bottom: 8px;
+    font-style: light;
 
 
 }
@@ -75,6 +79,7 @@ color: red;
 #kanye{
     height: 628px;
     grid-area: kanye;
+    background-size: cover;
     background-repeat: no-repeat;
     background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQbSeyEy-G7rLrWzTtn-NYLudq50ozGKqF9ghAQZwWLgxxs1RBU);
 }
@@ -82,6 +87,8 @@ color: red;
 #ed{
     background-color: rgb(255, 255, 255);
     grid-area: ed;
+    font-family: 'Inter', sans-serif;
+
 
 }
 
@@ -89,6 +96,8 @@ color: red;
     background-color: rgb(255, 255, 255);
     grid-area: hobbies;
     float: right;
+    font-family: 'Inter', sans-serif;
+
 }
 
 
@@ -98,6 +107,8 @@ color: red;
     margin-top: 10px;
     text-align: center;
     color:white;
+    font-family: 'Inter', sans-serif;
+
 
 
 }

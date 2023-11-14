@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rock+Salt&family=Teko&display=swap');
+#main{
+  color:white;
+  background-color:#393939;
+  display:grid;
+  grid-gap:10px;
+    grid-template-areas: "header header header header socials"
+                         "banner banner banner banner welcome"
+                         "anni anni camp camp welcome ";
+}
+
+#header{
+color: #BB0908;
+  font-family: 'Teko', sans-serif;
+    grid-area: header;
+  margin-left:30px;
+}
+
+#socials{
+    grid-area: socials;
+}
+
+#banner{    grid-area: banner;
+  background-image:url(https://jasonedmiston.com/admin/wp-content/uploads/F13-Pt6-banner.jpg);
+        background-size: cover;
+  height:388px;
+  width: 1440px;
+
+
+}
+#welcome{
+    grid-area: welcome;
+}
+
+#anni{
+    grid-area: anni;
+  font-family: 'Poppins', sans-serif;
+
+}
+#tt{
+  color: #FF1D29;
+font-family: 'Rock Salt', cursive;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  text-decoration:underline;
+}
+#poster{
+  float:left;
+}
+#flag{
+  width: 641px;
+
+  height:200px;
+}
+#dvd{
+  height:120px;
+margin-left:200px;
+}
+#wel{
+  font-family: 'Roboto', sans-serif;
+
+    width:325px;
+  height:254px;
+}
+#water{
+  width:325px;
+  height:170px;
+}
+#camp{
+    grid-area: camp;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+#socialbutton{
+  float:right;
+  height:30px;
+}
+
+#link{
+  color: #22C1CB;
+}
+
+#movieprice{
+  margin-left:200px;
+  Text-decoration:underline;
+}

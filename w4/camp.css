@@ -46,7 +46,7 @@ color: #BB0908;
 #welcome{
     grid-area: welcome;
     background: #393939;
-    width: 360px;
+    width: 340px;
     height: 918px;
     padding-right: 41px;
     font-size: 18px;
@@ -56,7 +56,7 @@ color: #BB0908;
 }
 
 #welcomeText{
-  
+
 }
 
 #anni{
@@ -80,6 +80,9 @@ line-height: normal;
   width: 353px;
 height: 77px;
   float: right;
+    border-bottom: 5px solid #BB0908;
+  margin-right:21px;
+
 
 
 }
@@ -108,11 +111,12 @@ margin-left:19px;
 #water{
   width: 325px;
   height: 170.525px;
+  margin-top: 54px;
 }
 #camp{
     grid-area: camp;
   font-family: 'Poppins', sans-serif;
-  width: 700px;
+  width: 718px;
 height: 481px;
 background: #393939;
 border-top: 5px solid #BB0908;
@@ -130,11 +134,18 @@ border-top: 5px solid #BB0908;
 
 #link{
   color: #22C1CB;
+  float:right;
+  margin-right:38px;
 }
 
 #movieprice{
   Text-decoration:underline;
-  font-size: 72px;
+  float:right;
+    margin-right:70px;
+  color:black;
+ font-family: 'Teko', sans-serif;
+
+
 
 }
 
@@ -144,7 +155,6 @@ border-top: 5px solid #BB0908;
 
 #dates{
   width: 349px;
-  border-top: 5px solid #BB0908;
   float:right;
   height: 216px;
 
@@ -161,6 +171,7 @@ font-size: 24px;
 #anniText{
   font-size: 18px;
   padding-left: 19px;
+    margin-right:21px;
   
 
 }

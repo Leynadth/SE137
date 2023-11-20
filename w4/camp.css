@@ -7,24 +7,28 @@
     display:grid;
     grid-template-areas: "header header header header socials"
                          "banner banner banner banner welcome"
-                         "anni anni camp camp welcome ";
-    
+                         "anni anni camp camp welcome "
+                         "footer footer footer footer footer";
+
 }
 
 #header{
-color: #BB0908;
-  font-family: 'Teko', sans-serif;
-    grid-area: header;
+  grid-area: header;
   padding-left: 30px;
   border-top: 35px;
   border-bottom: 15px;
   background-color: #070707;
   height: 100px;
-  font-size: 20px;
+
+}
+
+#title{
+  color: #BB0908;
+  font-family: 'Teko', sans-serif;
+  font-size: 48px;
   font-style: normal;
+  font-weight: 400;
 
-
-  
 }
 
 #socials{
@@ -56,7 +60,16 @@ color: #BB0908;
 }
 
 #welcomeText{
-
+  width: 275px;
+  height: 385px;
+  top: 409px;
+  left: 1504px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+font-weight: 400;
+line-height: normal;
+  
 }
 
 #anni{
@@ -80,8 +93,9 @@ line-height: normal;
   width: 353px;
 height: 77px;
   float: right;
-    border-bottom: 5px solid #BB0908;
   margin-right:21px;
+  border-bottom: 5px solid #BB0908;
+
 
 
 
@@ -89,7 +103,7 @@ height: 77px;
 #poster{
   float:left;
   width: 310px;
-height: 478px;
+height: 481px;
 }
 #flag{
   width: 641px;
@@ -98,8 +112,12 @@ height: 478px;
   height: 229px;
 }
 #dvd{
-  height:120px;
-margin-left:19px;
+  position: absolute;
+  width: 117px;
+  height: 148px;
+  top: 840px;
+  left: 351px;  
+  object-fit: cover;
 }
 #wel{
   font-family: 'Roboto', sans-serif;
@@ -111,7 +129,7 @@ margin-left:19px;
 #water{
   width: 325px;
   height: 170.525px;
-  margin-top: 54px;
+  margin-top: 37px;
 }
 #camp{
     grid-area: camp;
@@ -138,19 +156,11 @@ border-top: 5px solid #BB0908;
   margin-right:38px;
 }
 
-#movieprice{
-  Text-decoration:underline;
-  float:right;
-    margin-right:70px;
-  color:black;
- font-family: 'Teko', sans-serif;
-
-
-
-}
-
 .date{
   color: #FF1D29;
+  font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 #dates{
@@ -165,13 +175,64 @@ width: 676px;
 height: 195px;
 margin-left: 24px;
 font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 
 }
 
 #anniText{
-  font-size: 18px;
-  padding-left: 19px;
-    margin-right:21px;
+  position: absolute;
+  top: 82px;
+  left: 331px;
+  display: inline-block;
+  width: 349px;
+margin-top: 560px;
+font-family: 'Poppins', sans-serif;
+font-size: 18px;
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
   
+
+}
+
+#amazon{
+  position: absolute;
+  left: 494px;
+  margin-top: auto;
+  text-decoration: underline;
+  color: #22c1cb;
+  top: 840px;
+
+}
+
+#movieprice{
+  Text-decoration:underline;
+  color: #FFF;
+  font-family: 'Teko', sans-serif;
+ font-size: 72px;
+ font-style: normal;
+font-weight: 700;
+line-height: normal;
+
+
+}
+
+#footer{
+  grid-area: footer;
+  color: #BCBCBC;
+  font-family: 'Teko', sans-serif;
+background-color: #070707;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#footer-text{
+  margin-left: 30px;
 
 }

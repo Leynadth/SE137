@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Rock+Salt&family=Teko&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    display: 100%;
+    height: 730px;
+    width: 100%;
+    margin:0;
+}
+
+
+main{
+    height:730px;
+    width: 100%;
+
+    display:flex;
+    flex-direction: column;
+}
+header{
+    padding:10px;
+    background-color: #505050;;
+    display: inline-block;
+
+}
+section{
+    display:flex;
+    height:100%;
+}
+
+aside{
+    Width:45px;
+    Height:730px ;
+    background-color: #505050;;
+    align-items: center;
+}
+
+
+footer{
+    padding:10px;
+    background-color: crimson;
+}
+#editor{
+    width: 1177px;
+    display:flex;
+    flex-direction: column;
+    background: #060606;
+}
+nav a{
+    display:flex;
+    width: 173px;
+    height: 34px;
+    background: #373737;    
+    float:left;
+    color: #C2C2C2;
+    align-items: center;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+  }
+  
+textarea{
+    width:100%;
+    height:100%;
+    border-width: 0;
+    resize:none;
+    outline:none;
+    background-color:black;
+    overflow-y:scroll;
+    color:white;
+    
+}
+p{
+    background-color:#666;
+    margin:0;
+}
+
+ #inner-tray{
+    width:200px;
+    background: #373737;
+ }
+.tray{
+    
+    width:200px;
+    display:flex;
+    justify-content: flex-start;
+    overflow:hidden;
+    transition:all .5s;
+}
+
+.closed{
+    width:0px;
+    transition:all .5s;
+}
+
+#sprite1{
+    Width:26px;
+    Height:32px;
+}
+
+#header1{
+    margin-left: 35px;
+}
+#header2{
+    margin-left:15px;
+}
+#header3{
+    margin-left:17px;
+}
+#header4{
+    margin-left: 617px;
+}
+#header0{
+    background-color: #505050;
+    color: #E3E3E3;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.class{
+    width: 13px;
+height: 16px;
+}
+
+#plane{
+    width: 13px;
+    height: 16px;
+    margin-right: 5px;
+    margin-left: 10px;
+}
+
+#X{
+    width: 13px;
+    height: 16px;
+margin-left: 95px;}
+
+#plane:hover {
+    opacity: 0.7;
+  }

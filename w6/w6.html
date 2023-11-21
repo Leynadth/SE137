@@ -19,14 +19,25 @@
             <aside>
                 <a href="#" id="toggle" id="aside1"><img id="sprite1" src="images/Sprite1.png"></a>
                 <a href="#" id="toggle" id="aside2"><img id="sprite1" src="images/windows.png"></a>
-                <a href="#" id="toggle" id="aside3"><img id="sprite1" src="images/trash.png"></a>
+                <a href="#" id="toggle" id="aside3"><img id="sprite1" class="trash" src="images/trash.png"></a>
 
             </aside>
             <div class="tray">
                 <div id="inner-tray">
+                    <p id="fileTags"><img id="arrow" src="images/arrow.png" id="arrow"> Files</p>
                     <ul>
-                        <li>list</li>
-                        <li>list</li>
+                        <li id="fileList"><p><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
+                        <li id="fileList"><p><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
+                        <li id="fileList"><p><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
+                        <li id="fileList"><p ><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
+
+                    </ul>
+                    <p id="fileTags"><img id="arrow" src="images/arrow.png" id="arrow">Other Stuff</p>
+                    <ul>
+                        <li id="fileList"><p><img id="files" src="images/fire.png" id="fire"> Stuff 1</p></li>
+                        <li id="fileList"><p><img id="files" src="images/fire.png" id="fire"> Stuff 2</p></li>
+
+
                     </ul>
                 </div>
             </div>
@@ -43,7 +54,9 @@
                 </textarea>
             </div>
         </section>
-        <footer></footer>
+        <footer id="footer">
+           <p>Text goes here</p> 
+        </footer>
     </main>
     <script src="script.js">
 

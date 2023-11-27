@@ -1,0 +1,35 @@
+main{
+    display: grid;
+    grid-template-areas: "header header header header header"
+                          "image image image image side"
+                          "rules rules pizza pizza side"
+                          "footer footer footer footer footer";
+}
+
+#header{
+    grid-area: header;
+}
+
+.container1{
+    display: flex;
+}
+
+#image{
+    grid-area: image;
+}
+
+#side{
+    grid-area: side;
+}
+
+#rules{
+    grid-area: rules;
+}
+
+#pizza{
+    grid-area: pizza;
+}
+
+#footer{
+    grid-area: footer;
+}

@@ -11,34 +11,49 @@
 <body>
     <main>
         <header>
-
-            <p id="header0"><span id="header1">File</span><span id="header2">Edit</span><span id="header3">Help</span><span id="header4">Week 6 Assignment</span></p>
-
+            <h1 id="header0"><span id="header1">File</span><span id="header2">Edit</span><span id="header3">Help</span><span id="header4">Week 6 Assignment</span><img id="settings"src="images/settings.png"></h1>
         </header>
+
+
         <section>
             <aside>
-                <a href="#" id="toggle" id="aside1"><img id="sprite1" src="images/Sprite1.png"></a>
-                <a href="#" id="toggle" id="aside2"><img id="sprite1" src="images/windows.png"></a>
-                <a href="#" id="toggle" id="aside3"><img id="sprite1" class="trash" src="images/trash.png"></a>
+                <a href="#" id="toggle" id="aside1"><img class="sprite1" src="images/Sprite1.png"></a>
+                <a href="#" id="toggle" id="aside1"><img class="sprite1" src="images/windows.png"></a>
+                <a href="#" id="toggle" id="aside1"><img class="sprite1" id="trash" src="images/trash.png"></a>
 
             </aside>
             <div class="tray">
                 <div id="inner-tray">
-                    <p id="fileTags"><img id="arrow" src="images/arrow.png" id="arrow"> Files</p>
-                    <ul>
-                        <li id="fileList"><p><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
-                        <li id="fileList"><p><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
-                        <li id="fileList"><p><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
-                        <li id="fileList"><p ><img id="files" src="images/paper.png" id="arrow"> Files 1</p></li>
-
-                    </ul>
-                    <p id="fileTags"><img id="arrow" src="images/arrow.png" id="arrow">Other Stuff</p>
-                    <ul>
-                        <li id="fileList"><p><img id="files" src="images/fire.png" id="fire"> Stuff 1</p></li>
-                        <li id="fileList"><p><img id="files" src="images/fire.png" id="fire"> Stuff 2</p></li>
-
-
-                    </ul>
+                    <div>
+                    <details id="details1">
+                        <summary>
+                            <img class="custom-arrow" src="images/arrow.png" alt="Toggle">
+                             Files
+                        </summary>
+                        <ul id="Files">
+                            <li id="fileList1">File 1</li>
+                            <li id="fileList1">File 1</li>
+                            <li id="fileList1">File 1</li>
+                            <li id="fileList1">File 1</li>
+    
+    
+                        </ul>
+                    </details>
+                    </div>
+                    <div>
+                    <details>
+                        <summary>
+                            <img class="custom-arrow" src="images/arrow.png" alt="Toggle">
+                             Other Stuff
+                        </summary>
+                        <ul id="Stuff">
+                            <li id="fileList0">Stuff 1</li>
+                            <li id="fileList0">Stuff 2</li>
+    
+    
+                        </ul>
+                    </details>
+                    </div>
                 </div>
             </div>
             <div id="editor">
@@ -47,7 +62,7 @@
                     <a href="#"><img src="images/plane.png" id="plane">Tab 2<img src="images/X.png" id="X"></a>
                     <a href="#"><img src="images/plane.png" id="plane">Tab 3<img src="images/X.png" id="X"></a>
                 </nav>
-                <p>
+                <p id="navwords">
                    words
                 </p>
                 <textarea>
@@ -55,7 +70,7 @@
             </div>
         </section>
         <footer id="footer">
-           <p>Text goes here</p> 
+           <p><span>Text goes here</span><img id="wifi" src="images/wifi.png" ></p>
         </footer>
     </main>
     <script src="script.js">

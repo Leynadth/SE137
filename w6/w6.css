@@ -7,21 +7,22 @@
 }
 html, body{
     display: 100%;
-    height: 730px;
+    height: 100%;
     width: 100%;
     margin:0;
 }
 
 
 main{
-    height:730px;
+    height: 100%;
     width: 100%;
 
     display:flex;
     flex-direction: column;
 }
 header{
-    padding:10px;
+    width: 100%;
+    padding-left:10px;
     background-color: #505050;;
     display: inline-block;
 
@@ -34,8 +35,8 @@ section{
 }
 
 aside{
-    Width:45px;
-    Height:730px ;
+    Width:50px;
+    Height:100% ;
     background-color: #505050;;
 }
 
@@ -43,27 +44,36 @@ aside{
 #footer{
     background-color:#0254A0;
     color: #ffffff;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     width: 100%;
     height: 14px;
-    
 }
+
+#footer p {
+    background-color: transparent;
+    margin: 0;
+    width: 100%;
+}
+
+
+
 #editor{
-    width: 1177px;
+    width: 100%;
     display:flex;
     flex-direction: column;
     background: #060606;
 }
 nav a{
     display:flex;
-    width: 173px;
+    width: 181px;
     height: 34px;
     background: #373737;    
     float:left;
+    font-family: 'Roboto', sans-serif;
     color: #C2C2C2;
     align-items: center;
     text-decoration: none;
@@ -93,12 +103,11 @@ p{
 }
 
  #inner-tray{
-    width: 144px;
+    width: auto;
     background: #373737;
  }
 .tray{
     
-    width: 200px;
     display:flex;
     justify-content: flex-start;
     overflow:hidden;
@@ -110,9 +119,11 @@ p{
     transition:all .5s;
 }
 
-#sprite1{
+.sprite1{
     Width:26px;
     Height:32px;
+    margin-left: 9px;
+
 }
 
 #header1{
@@ -125,8 +136,22 @@ p{
     margin-left:17px;
 }
 #header4{
-    margin-left: 617px;
+    margin-left: 475px;
+    text-align: center;
 }
+
+#settings{
+    position: absolute;
+    right: 1px;
+    top: 0px;
+}
+#wifi{
+    position: absolute;
+    right: 1px;
+    bottom: 0px;
+    height: 14px;
+}
+
 #header0{
     background-color: #505050;
     color: #E3E3E3;
@@ -154,17 +179,20 @@ height: 16px;
     height: 16px;
 margin-left: 90px;}
 
-#plane:hover {
+#plane:hover , .sprite1:hover, #fileList1:hover, #fileList0:hover, .custom-arrow:hover, #X:hover{
+    opacity: 1;
+  }
+
+  #plane, .sprite1, #fileList1, #fileList0,  .custom-arrow, #X{
     opacity: 0.7;
   }
 
-#sprite1{
-    padding-left: 9px;
-}
-
-.trash{  float: right;
 
 
+#trash{
+    position:fixed;
+    bottom: 19px;
+    left: 0px;
 }
 
 #arrow{
@@ -173,17 +201,6 @@ margin-left: 90px;}
     height: 16px;
 }
 
-#fileTags{
-    width: 136px;
-    border-bottom: 1px solid #ffffff;
-    background: #373737;
-    padding-top: 10px;
-    padding-bottom: 9px;
-    width:136px;
-
-    ;
-
-}
 #fileList{
     list-style-type: none;
 }
@@ -191,4 +208,113 @@ margin-left: 90px;}
     width: 13px;
 height: 16px;
 flex-shrink: 0;
+}
+
+#aside1{
+	background: url('images/sprites.png') no-repeat -169px -25px;
+	width: 12px;
+	height: 12px;
+}
+
+.custom-arrow {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    
+}
+
+
+details{
+    margin-bottom: 25px;
+    width:136px;
+
+
+}
+
+details summary {
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-right: 20px;
+    margin-left: 4.5px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+border-bottom: 1px solid #7B7575; /* Add this line for the border */
+border-top: 1px solid #7B7575; /* Add this line for the border */
+padding-bottom: 9px;
+padding-top: 9px;
+}
+
+
+
+
+
+ul.custom-bullet-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Apply custom background image as a sprite to the list items */
+ul.custom-bullet-list li {
+	background: url('images/sprites.png') no-repeat -74px -120px;
+    width: 13px;
+    height: 16px;
+    margin-left: 19px;
+    margin-bottom: 7px;
+    
+
+}
+
+
+#Stuff{
+    list-style-image: url('images/fire.png');
+    color: #E3E3E3;
+    font-family: 'Roboto', sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+
+#Files{
+    list-style-image: url('images/paper.png');
+    color: #E3E3E3;
+    font-family: 'Roboto', sans-serif;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#fileList1, #fileList0{
+    margin-bottom: 10px;
+
+}
+
+#navwords{
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: underline;  
+}
+
+#navwords a:visited{
+    color: #0058A9;
+
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Full of Important Statistics</title>
+  <link rel="stylesheet" href="stats.css">
+</head>
+<body>
+  <h1>Page Full of Important Statistics</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>NAME</th>
+        <th>ID</th>
+        <th class="stat" data-abbr="S1">Statistic1</th>
+        <th class="stat" data-abbr="S2">Statistic2</th>
+        <th class="stat" data-abbr="S3">Statistic3</th>
+        <th class="stat" data-abbr="S4">Statistic4</th>
+        <th class="stat" data-abbr="S5">Statistic5</th>
+        <th class="stat" data-abbr="S6">Statistic6</th>
+        <th>AVERAGE</th>
+        <th>TOTAL</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <script>
+    const body = document.querySelector('tbody');
+    let content = '';
+    const numOfStats = 6;
+    const numOfPeople = 50;
+
+    for (let i = 0; i < numOfPeople; i++) {
+      let avg = 0;
+      let total = 0;
+      let id = '';
+
+      for (let j = 0; j < numOfStats; j++) {
+        id += Math.floor(Math.random() * 9.9).toString();
+      }
+
+      content += `<tr>`;
+      content += `<td><b>Dude ${i}</b></td>`;
+      content += `<td><b>${id}</b></td>`;
+
+      for (let j = 0; j < numOfStats; j++) {
+        const stat = Math.floor(Math.random() * 100.9);
+        content += `<td class="stat">${stat}</td>`;
+        total += stat;
+      }
+
+      avg = total / numOfStats;
+      content += `<td><b>${avg.toFixed(2)}</b></td>`;
+      content += `<td><b>${total}</b></td>`;
+      content += `</tr>`;
+    }
+
+    body.innerHTML = content;
+  </script>
+</body>
+</html>
